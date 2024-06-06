@@ -1,0 +1,11 @@
+Oath y0_AgAAAAByM5VfAATuwQAAAAD_ts7LAACvhNbSRpZMtYo2h7ehpp3sSHDN3w
+
+$yandexPassportOauthToken = "y0_AgAAAAByM5VfAATuwQAAAAD_ts7LAACvhNbSRpZMtYo2h7ehpp3sSHDN3w"
+$Body = @{ yandexPassportOauthToken = "$yandexPassportOauthToken" } | ConvertTo-Json -Compress
+Invoke-RestMethod -Method 'POST' -Uri 'https://iam.api.cloud.yandex.net/iam/v1/tokens' -Body $Body -ContentType 'Application/json' | Select-Object -ExpandProperty iamToken
+
+
+
+
+admin t1.9euelZqYiZWdi5HMypWRmseXycrKyu3rnpWax5OexsmelM-QyZWRj46Mj8fl8_daYlpP-e9zJhEM_d3z9xoRWE_573MmEQz9zef1656VmpyLkMfMk5eUxpPKnpibmZCc7_zF656VmpyLkMfMk5eUxpPKnpibmZCc.WLx4qCFdIDf38CrONVRHEUTerTRLVOZrCNIImHNAN9rCqGWtUJHPX1fv-czlF7J0wnXw-6U2k2FjzC28BNZ_Ag
+user t1.9euelZqKzsuUiZ2RlJSMm8aRi5qci-3rnpWampHMk4zLkcqLyM-Szsubycbl9Pc-YlpP-e86aV6c3fT3fhBYT_nvOmlenM3n9euelZqeio-RjJuRy8uYi8mSnZbNl-_8xeuelZqeio-RjJuRy8uYi8mSnZbNlw.mY2zmuoTT9c_PGXNal6R8I4dSWuopjAbmp4m1niNYp0nxsigTk4uMvPOex2RKZkZYD9rdw4cMPil9KCxs-yqCA
